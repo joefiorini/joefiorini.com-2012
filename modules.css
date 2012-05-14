@@ -1,0 +1,126 @@
+.bio {
+  color: hsl(325, 0%, 25%);
+  background-image: url(/clean_textile.png);
+  padding-top: .5em;
+}
+.bio>.bio-main {
+  padding-bottom: 5em;
+}
+.bio-meta {
+  padding-top: 3em;
+  margin: 0 auto;
+  list-style-position: outside;
+  width: 50%;
+  text-align: left;
+}
+.bio-meta .bio-detail:before {
+  content: '\2767';
+  margin-right: 10px;
+  font-size: 1em;
+}
+.bio-meta .bio-detail {
+  font-family: "ff-tisa-web-pro";
+  font-size: 2em;
+  margin: 10px 0;
+  line-height: 1.2em;
+}
+.bio .title {
+  color: hsl(325, 0%, 55%);
+  font-family: "ff-tisa-web-pro";
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: left;
+}
+.title>em {
+  font-style: italic;
+}
+.bio img {
+  float: left;
+}
+.bio .bio-name {
+  font-size: 5em;
+  line-height: 1em;
+  font-family: "ff-meta-web-pro";
+  text-align: left;
+}
+
+
+.philosophy {
+  background-image: url(/dark_Tire.png);
+  color: hsl(325, 0%, 87%);
+  text-align: left;
+  padding: 3em 0;
+}
+.philosophy p {
+  text-shadow: 2px 2px hsl(325, 0%, 26%);
+  font-weight: 600;
+  font-family: 'futura-pt';
+  text-transform: uppercase;
+}
+
+
+.projects {
+  margin-bottom: 2.1875em;
+}
+.projects .philosophy-detail p {
+  font-size: 8.9375em;
+  line-height: .9em;
+}
+.projects .conclusion p {
+  font-size: 7.158em;
+  line-height: .8em;
+}
+
+
+.requirements {
+  margin-bottom: 4.375em;
+}
+.requirements .philosophy-detail p {
+  font-size: 5.6em;
+  line-height: 1.2em;
+}
+.requirements .conclusion p {
+  font-size: 6.535em;
+  line-height: .7em;
+}
+
+.conclusion.word-block {
+  font-size: .5234em;
+}
+
+
+.products p {
+  font-size: 6.625em;
+  color: hsl(325, 0%, 59%);
+}
+.products .first-line {
+  letter-spacing: .15em;
+}
+.products .second-line {
+  letter-spacing: .02em;
+}
+.products .third-line {
+  letter-spacing: .16em;
+}
+.products .last-line {
+  letter-spacing: .1em;
+}
+.products p strong {
+  color: #fff;
+}
+
+.word-block {
+  font-family: "futura-pt-condensed";
+  text-shadow: 1px 1px hsl(325, 0%, 26%);
+  color: hsl(326, 0%, 69%);
+  font-weight: 400;
+  display: inline-block;
+  font-size: .5em;
+  line-height: .7em;
+  white-space: normal;
+  text-transform: lowercase;
+}
+
+.word-block .first-word {
+  display: block;
+}
