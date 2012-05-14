@@ -64,9 +64,20 @@
   font-size: 8.9375em;
   line-height: .9em;
 }
+@media screen and (max-width: 480px) {
+  .projects .philosophy-detail p {
+    font-size: 3.8em;
+  }
+}
+
 .projects .conclusion p {
   font-size: 7.158em;
   line-height: .8em;
+}
+@media screen and (max-width: 480px) {
+  .projects .conclusion p {
+    font-size: 3.03em;
+  }
 }
 
 
@@ -77,9 +88,23 @@
   font-size: 5.6em;
   line-height: 1.2em;
 }
+@media screen and (max-width: 480px) {
+  .requirements .philosophy-detail p {
+    font-size: 2.35em;
+  }
+}
 .requirements .conclusion p {
   font-size: 6.535em;
   line-height: .7em;
+}
+@media screen and (max-width: 480px) {
+  .requirements .word-block {
+    font-size: .6em;
+    line-height: 1em;
+  }
+  .requirements .conclusion p {
+    font-size: 2.65em;
+  }
 }
 
 .word-block {
@@ -93,6 +118,10 @@
   white-space: normal;
   text-transform: lowercase;
 }
+@media screen and (max-width: 480px) {
+  .word-block {
+    font-size: .6em;
+  }
 }
 
 
@@ -101,6 +130,10 @@
   color: hsl(325, 0%, 59%);
   line-height: 1em;
 }
+@media screen and (max-width: 480px) {
+  .products p {
+    font-size: 2.825em;
+  }
 }
 .products .first-line {
   letter-spacing: .15em;
