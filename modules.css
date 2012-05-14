@@ -34,14 +34,25 @@
 .title>em {
   font-style: italic;
 }
-.bio img {
-  float: left;
-}
 .bio .bio-name {
   font-size: 5em;
   line-height: 1em;
   font-family: "ff-meta-web-pro";
   text-align: left;
+}
+.bio .joe {
+  background-image: url(/avatar-colbow-long.png);
+  background-size: 300 396;
+  width: 300;
+  height: 396;
+}
+@media screen and (max-width: 480px) {
+  .bio .joe {
+    background-image: url(/avatar-colbow.png);
+    background-size: 300 300;
+    width: 300;
+    height: 300;
+  }
 }
 
 
