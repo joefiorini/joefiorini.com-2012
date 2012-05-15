@@ -1,3 +1,32 @@
+.loves {
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,0)), url(/dark-texture.png);
+  border-top: solid 1px #000;
+  -webkit-box-shadow: 1px 2px 2px #fff;
+  border-bottom: solid 1px #000;
+  padding: .5em 0;
+}
+.loves .loved:first-child {
+  text-transform: inherit;
+  margin: inherit;
+}
+.loved .heart {
+  color: #fc2c5f;
+}
+.loves .loved {
+  color: hsl(325, 0%, 87%);
+  border-right: rgba(255,255,255,.3) solid 1px;
+  box-shadow: 1px 0px 1px #000;
+  font-size: 2em;
+  line-height: 1.25em;
+  padding: .3em 1.9%;
+  font-family: "futura-pt";
+  text-align: left;
+  text-transform: lowercase;
+  height: 2.5em;
+  margin: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+
 .bio {
   color: hsl(325, 0%, 25%);
   background-image: url(/clean_textile.png);
@@ -34,6 +63,9 @@
 .title>em {
   font-style: italic;
 }
+.bio .bio-intro {
+  padding-top: 6em;
+}
 .bio .bio-name {
   font-size: 5em;
   line-height: 1em;
@@ -42,9 +74,10 @@
 }
 .bio .joe {
   background-image: url(/avatar-colbow-long.png);
-  background-size: 300 396;
-  width: 300;
-  height: 396;
+  background-repeat: no-repeat;
+  background-size: 300px 396px;
+  width: 300px;
+  height: 396px;
 }
 @media screen and (max-width: 480px) {
   .bio .joe {
