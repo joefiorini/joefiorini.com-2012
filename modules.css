@@ -58,7 +58,7 @@
   font-family: "ff-tisa-web-pro";
   font-size: 1.5em;
   line-height: 1.5em;
-  text-align: left;
+  text-align: right;
 }
 .title>em {
   font-style: italic;
@@ -70,7 +70,7 @@
   font-size: 5em;
   line-height: 1em;
   font-family: "ff-meta-web-pro";
-  text-align: left;
+  text-align: right;
 }
 .bio .joe {
   background-image: url(/avatar-colbow-long.png);
