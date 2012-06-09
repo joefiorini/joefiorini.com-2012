@@ -1,3 +1,4 @@
+@import "elements.css.less";
 @import "reset.css.less";
 
 @font-size: 32;
@@ -85,8 +86,9 @@ body {
 
 .loves {
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,0)), url(/images/dark-texture.png);
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,0)), url(/images/dark-texture.png);
   border-top: solid 1px #000;
-  -webkit-box-shadow: 1px 2px 2px #fff;
+  .box-shadow(1px 2px 2px #fff);
   border-bottom: solid 1px #000;
   padding: .5em 0;
   .loved {
