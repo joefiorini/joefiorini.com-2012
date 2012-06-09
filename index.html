@@ -1,121 +1,64 @@
-<!doctype html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>joefiorini.com</title>
     <script type="text/javascript" src="http://use.typekit.com/fkc5ldo.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/1140.css">
-    <link rel="stylesheet" href="/modules.css">
-    <style>
-      .group:before,
-      .group:after {
-          content:"";
-          display:table;
-      }
-      .group:after {
-          clear:both;
-      }
-    </style>
+    <link href="/css/layout.css" type="text/css" rel="stylesheet">
   </head>
-  <body class="grid-container">
-    <div class="container bio">
-      <section>
-        <div class="row">
-          <div class="twocol"></div>
-          <div class="sixcol">
-          </div>
+  <body>
+    <section class="bio">
+      <div class="wrapper">
+        <div class="intro">
+          <h2 class="name">Joe<br>Fiorini</h2>
+          <h3 class="title"><em>Product Designer & Developer</em></h3>
         </div>
-        <div class="row">
-          <div class="onecol"></div>
-          <div class="fourcol">
-            <div class="row bio-intro">
-              <div class="twocol"></div>
-              <h2 class="fourcol bio-name">Joe Fiorini</h2>
-            </div>
-            <div class="row">
-              <h3 class="sixcol title"><em>Product Designer & Developer</em></h3>
-            </div>
-          </div>
-          <div class="onecol"></div>
-          <div class="joe fourcol"></div>
-        </div>
-      </section>
-    </div>
-    <div class="container loves">
-      <section>
-      <div class="row">
-        <div class="onecol"></div>
+        <div class="joe"></div>
+      </div>
+    </section>
+
+    <section class="loves">
+      <div class="wrapper">
         <ul>
-          <li class="loved onecol">
+          <li class="loved">
             I <span class="heart">&#10084;</span>
           </li>
-          <li class="loved threecol">
+          <li class="loved">
             <del>good</del> great coffee
           </li>
-          <li class="loved threecol">
+          <li class="loved">
             my wife &amp; daughter
           </li>
-          <li class="loved threecol">
+          <li class="loved">
             playing guitar
           </li>
         </ul>
-        <div class="onecol last"></div>
       </div>
-      </section>
-    </div>
-    <div class="container philosophy">
-      <section>
-        <div class="projects">
-          <div class="row">
-            <div class="twocol"></div>
-            <div class="eightcol philosophy-detail"><p>Projects</p></div>
-          </div>
-          <div class="row">
-            <div class="twocol"></div>
-            <div class="eightcol philosophy-detail conclusion">
-              <p>
-                <span class="word-block">are<br>not</span>
-                managed
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="requirements">
-          <div class="row">
-            <div class="twocol"></div>
-            <div class="eightcol philosophy-detail"><p>Requirements</p></div>
-          </div>
-          <div class="row">
-            <div class="twocol"></div>
-            <div class="eightcol philosophy-detail conclusion"><p><span class="word-block">can't be</span> gathered</p></div>
-          </div>
-        </div>
-        <div class="products">
-          <div class="row"><div class="twocol"></div>
-            <div class="eightcol">
-              <p class="first-line">Products</p>
-            </div>
-          </div>
-          <div class="row"><div class="twocol"></div>
-            <div class="eightcol">
-              <p class="second-line"><strong>grow</strong>from</p>
-            </div>
-          </div>
-          <div class="row"><div class="twocol"></div>
-            <div class="eightcol">
-              <p class="third-line">problems</p>
-            </div>
-          </div>
-          <div class="row"><div class="twocol"></div>
-            <div class="eightcol">
-              <p class="last-line">and<strong>care&#9829;</strong></p>
-            </div>
-          </div>
-        </div>
     </section>
-  </div>
-</body>
+
+    <section class="philosophy">
+      <div class="wrapper">
+        <blockquote class="projects statement">
+          <div>
+          <p>Projects</p>
+          <p>can't be</p>
+          <p>managed</p>
+          </div>
+        </blockquote>
+        <blockquote class="requirements statement">
+          <div>
+            <p>Requirements</p>
+            <p>are not</p>
+            <p>gathered</p>
+          </div>
+        </blockquote>
+        <blockquote class="products statement">
+          <div>
+            <p>Products</p>
+            <p><em>grow</em>from</p>
+            <p>needs</p>
+            <p>and<em>care</em></p>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+  </body>
 </html>
