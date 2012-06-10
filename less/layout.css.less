@@ -45,14 +45,25 @@ body {
   line-height: @baseline/@font-size;
 }
 
+@mobile-width: 960/@em;
 .wrapper {
   margin: 0 auto;
   .grid-width(8);
-  .group
+  .group;
+  @media (max-width: @mobile-width) and (min-width: 1em) {
+    width: 100%;
+  }
 }
 
 .bio,.loves,.philosophy {
   .group;
+}
+
+.break {
+  display: block;
+  @media (max-width: @mobile-width) and (min-width: 1em) {
+    display: inline;
+  }
 }
 
 .bio {
@@ -62,30 +73,59 @@ body {
   .intro {
     .padding-column(1);
     .grid-column(3);
+    float: left;
     padding-top: @baseline*2/@em;
+    @media (max-width: @mobile-width) and (min-width: 1em) {
+      box-sizing: border-box;
+      background: url(/images/white_carbonfiber.png);
+      float: none;
+      width: 100%;
+      margin: 0;
+      padding: .5em;
+      .box-shadow(inset 0px 5px 8px -5px rgba(0,0,0,.65));
+      text-shadow: 1px 1px 1px #ddd;
+    }
   }
   .name {
     font-size: 80/@em;
     font-family: "futura-pt";
     font-weight: bold;
+    @media (max-width: @mobile-width) and (min-width: 1em) {
+      font-size: 32/@em;
+    }
   }
   .name, .title {
     text-align: right;
+    @media (max-width: @mobile-width) and (min-width: 1em) {
+      text-align: left;
+    }
   }
   .title {
     font-size: 24/@em;
-    color: #8C8C8C;
+    color: #5C5C5C;
     font-family: "ff-tisa-web-pro";
     > em {
       font-style: italic;
     }
+    @media (max-width: @mobile-width) and (min-width: 1em) {
+      font-size: 14/@em;
+    }
   }
   .joe {
     .grid-column(4, yes);
+    float: right;
     background-image: url(/images/avatar-colbow-long.png);
     background-repeat: no-repeat;
     background-size: 300px 396px;
     height: 396px;
+    @media (max-width: @mobile-width) and (min-width: 1em) {
+      height: 320px;
+      float: none;
+      width: 100%;
+      background-image: url(/images/avatar-colbow.png);
+      background-size: 226px 226px;
+      background-position: bottom right;
+    }
   }
 }
 
@@ -102,6 +142,13 @@ body {
       text-transform: inherit;
       margin: inherit;
       text-align: right;
+      @media (max-width: @mobile-width) and (min-width: 1em) {
+        float: none;
+        margin: .5em;
+        border-bottom: none;
+        box-shadow: none;
+        text-align: left;
+      }
     }
     .grid-column(2);
     color: hsl(325, 0%, 87%);
@@ -114,6 +161,14 @@ body {
     text-transform: lowercase;
     margin: 0;
     text-shadow: 1px 1px 1px #000;
+    @media (max-width: @mobile-width) and (min-width: 1em) {
+      float: none;
+      margin-left: 0;
+      border-right: none;
+      border-bottom: rgba(255,255,255,.3) solid 1px;
+      margin: .5em;
+      box-shadow: 0px 1px 0px #000;
+    }
   }
 }
 
