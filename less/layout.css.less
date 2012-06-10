@@ -7,22 +7,26 @@
 @width: 1140;
 @gutter-width: 40;
 @total-columns: 8;
-@column-width: (@width / @total-columns) / @em;
+@column-width: 102.5;
 
 .grid-column(@columns, yes){
+  .grid-width(@columns);
   margin-right: 0;
-  width: @column-width * @columns - @gutter-width / @em;
   float: left;
 }
 
 .grid-column(@columns){
+  .grid-width(@columns);
   margin-right: @gutter-width / @em;
-  width: @column-width * @columns - @gutter-width / @em;
   float: left;
 }
 
 .padding-column(@columns){
-  padding-left: @column-width * @columns;
+  padding-left: (@column-width + @gutter-width) * @columns / @em;
+}
+
+.grid-width(@columns){
+  width: ((@column-width + @gutter-width) * @columns - @gutter-width) / @em;
 }
 
 .group {
@@ -43,7 +47,8 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: @width / @em;
+  .grid-width(8);
+  .group
 }
 
 .bio,.loves,.philosophy {
