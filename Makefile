@@ -6,3 +6,5 @@ css:
 build: css
 	mkdir -p build/css
 	cp -r {index.html,images,css} build
+deploy: build
+	s3cmd sync build/* s3://www.joefiorini.com
